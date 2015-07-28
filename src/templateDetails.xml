@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.6/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+    <name>ciplogic_snappy</name>
+    <creationDate>25 Juli 2015</creationDate>
+    <author>Bogdan Mustiata</author>
+    <authorEmail>bogdan.mustiata@gmail.com</authorEmail>
+    <authorUrl>http://blog.ciplogic.com/</authorUrl>
+    <copyright>Copyright (C) 2015 Bogdan Mustiata &lt;bogdan.mustiata@gmail.com&gt;. All rights reserved.</copyright>
+    <license>GNU General Public License version 3 or later; see LICENSE.txt</license>
+    <version>1.0.0</version>
+    <description>ciplogic.com responsive and super fast template.</description>
+
+    <files>
+        <folder>js</folder>
+        <folder>css</folder>
+
+        <filename>index.php</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+
+    <positions>
+        <position>debug</position>
+        <position>position-0</position>
+    </positions>
+
+    <!-- languages -->
+    <!-- config -->
+</extension>
+

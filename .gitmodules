@@ -1,0 +1,3 @@
+[submodule "src/scss/portable"]
+	path = src/scss/portable
+	url = https://github.com/bmustiata/compass-mixins

@@ -1,0 +1,14 @@
+dl.article-info {
+    dt.article-info-term {
+        display : none;
+    }
+
+    dd {
+        margin: 0;
+
+        &.createdby {
+            font-weight: bold;
+            font-family: $font-family-title;
+        }
+    }
+}

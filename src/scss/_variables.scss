@@ -1,0 +1,14 @@
+/* ========================================================
+ * Color settings.
+ * ======================================================== */
+$color-background: #ffffff;
+$color-text : #000000;
+$color-link : #2491ca;
+$color-link-hover: lighten($color-link, 10);
+$color-title : lighten(complement($color-link), 20);
+
+/* ========================================================
+ * Font settings.
+ * ======================================================== */
+$font-family-title: Oswald, Verdana, Geneva, Arial, Helvetica, sans-serif;
+$font-family-regular-text: "Segoe UI", Arial, Helvetica, sans-serif;

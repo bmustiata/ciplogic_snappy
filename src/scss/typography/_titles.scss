@@ -1,0 +1,45 @@
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-title;
+    color: $color-title;
+}
+
+h2 {
+    font-size: 130%;
+    @include text-shadow(0px 2px 1px #222222);
+
+    a {
+        color : lighten($color-link, 0);
+        &:visited, &:active, &:focus {
+            color : lighten($color-link, 0);
+        }
+        &:hover {
+            color: $color-title;
+        }
+    }
+
+    @include MQ(L) {
+        @include text-shadow(0px 3px 2px #222222);
+        font-size: 180%;
+    };
+}
+
+
+h3 {
+    font-size: 115%;
+    @include text-shadow(0px 1px 1px #222222);
+
+    a {
+        color : lighten($color-link, 0);
+        &:visited, &:active, &:focus {
+            color : lighten($color-link, 0);
+        }
+        &:hover {
+            color: $color-title;
+        }
+    }
+
+    @include MQ(L) {
+        @include text-shadow(0px 2px 2px #222222);
+        font-size: 140%;
+    };
+}

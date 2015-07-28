@@ -1,0 +1,461 @@
+/* ========================================================
+ * COMPASS ITSELF
+ * ======================================================== */
+/* ========================================================
+ * CIPLOGIC PORTALBLE
+ * ======================================================== */
+/**
+ * box-sizing - Sets the box sizing of the element.
+ * @param $box-sizing: $default-box-sizing
+ */
+/**
+ * MQ - A mixin that creates a media query depending on the screen size.
+ * @param $screen-size: $default-screen-size
+ */
+/**
+ * big-button - Creates styling for a big button to be used inside a button element.
+ * @param $button-base-color: $default-button-base-color
+ * @param $button-text-color: $default-button-text-color
+ * @param $button-padding: $default-button-padding
+ */
+/**
+ * tag-links - Create a tag link.
+ * @param $tag-base: $default-tag-base
+ * @param $tag-hover: $default-tag-hover
+ */
+/* ========================================================
+ * Color settings.
+ * ======================================================== */
+/* ========================================================
+ * Font settings.
+ * ======================================================== */
+/* ========================================================
+ * This is a copy from:
+ * https://github.com/kristerkari/normalize.scss/blob/master/_normalize.scss
+ * ======================================================== */
+/* line 49, ../scss/portable/_normalize.scss */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/* line 65, ../scss/portable/_normalize.scss */
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+/* line 78, ../scss/portable/_normalize.scss */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/* line 88, ../scss/portable/_normalize.scss */
+[hidden], template {
+  display: none;
+}
+
+/* line 101, ../scss/portable/_normalize.scss */
+html {
+  background: #fff;
+  color: #000;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+/* line 113, ../scss/portable/_normalize.scss */
+html,
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+/* line 123, ../scss/portable/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/* line 136, ../scss/portable/_normalize.scss */
+a {
+  background: transparent;
+}
+/* line 143, ../scss/portable/_normalize.scss */
+a:focus {
+  outline: thin dotted;
+}
+/* line 149, ../scss/portable/_normalize.scss */
+a:hover, a:active {
+  outline: 0;
+}
+
+/* line 163, ../scss/portable/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* line 168, ../scss/portable/_normalize.scss */
+h2 {
+  font-size: 1.5em;
+  margin: 0.83em 0;
+}
+
+/* line 173, ../scss/portable/_normalize.scss */
+h3 {
+  font-size: 1.17em;
+  margin: 1em 0;
+}
+
+/* line 178, ../scss/portable/_normalize.scss */
+h4 {
+  font-size: 1em;
+  margin: 1.33em 0;
+}
+
+/* line 183, ../scss/portable/_normalize.scss */
+h5 {
+  font-size: 0.83em;
+  margin: 1.67em 0;
+}
+
+/* line 188, ../scss/portable/_normalize.scss */
+h6 {
+  font-size: 0.75em;
+  margin: 2.33em 0;
+}
+
+/* line 196, ../scss/portable/_normalize.scss */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/* line 202, ../scss/portable/_normalize.scss */
+b,
+strong {
+  font-weight: bold;
+}
+
+/* line 215, ../scss/portable/_normalize.scss */
+dfn {
+  font-style: italic;
+}
+
+/* line 221, ../scss/portable/_normalize.scss */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/* line 237, ../scss/portable/_normalize.scss */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, serif;
+  font-size: 1em;
+}
+
+/* line 250, ../scss/portable/_normalize.scss */
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* line 258, ../scss/portable/_normalize.scss */
+q {
+  quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* line 274, ../scss/portable/_normalize.scss */
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+/* line 283, ../scss/portable/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/* line 290, ../scss/portable/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 298, ../scss/portable/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* line 302, ../scss/portable/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 354, ../scss/portable/_normalize.scss */
+img {
+  border: 0;
+}
+
+/* line 363, ../scss/portable/_normalize.scss */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* line 373, ../scss/portable/_normalize.scss */
+figure {
+  margin: 0;
+}
+
+/* line 390, ../scss/portable/_normalize.scss */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/* line 401, ../scss/portable/_normalize.scss */
+legend {
+  border: 0;
+  padding: 0;
+  white-space: normal;
+}
+
+/* line 415, ../scss/portable/_normalize.scss */
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: 100%;
+  margin: 0;
+  vertical-align: baseline;
+}
+
+/* line 430, ../scss/portable/_normalize.scss */
+button, input {
+  line-height: normal;
+}
+
+/* line 439, ../scss/portable/_normalize.scss */
+button,
+select {
+  text-transform: none;
+}
+
+/* line 452, ../scss/portable/_normalize.scss */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+/* line 465, ../scss/portable/_normalize.scss */
+button[disabled],
+input[disabled] {
+  cursor: default;
+}
+
+/* line 474, ../scss/portable/_normalize.scss */
+button::-moz-focus-inner, input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/* line 483, ../scss/portable/_normalize.scss */
+textarea {
+  overflow: auto;
+  vertical-align: top;
+}
+
+/* line 494, ../scss/portable/_normalize.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 502, ../scss/portable/_normalize.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+/* line 510, ../scss/portable/_normalize.scss */
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+/* line 520, ../scss/portable/_normalize.scss */
+input[type="checkbox"], input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+/* ========================================================
+ * LAYOUT
+ * ======================================================== */
+/* ========================================================
+ * TYPOGRAPHY
+ * ======================================================== */
+/*
+ General typography settings for the whole page.
+ */
+@font-face {
+  font-family: Oswald;
+  src: url(../fonts/Oswald-Regular.ttf);
+}
+/* line 9, ../scss/typography/_page.scss */
+body {
+  font-size: 100%;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+}
+@media only screen and (min-width: 15cm) {
+  /* line 9, ../scss/typography/_page.scss */
+  body {
+    font-size: 100%;
+  }
+}
+
+/* line 1, ../scss/typography/_titles.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: Oswald, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  color: #e5976f;
+}
+
+/* line 6, ../scss/typography/_titles.scss */
+h2 {
+  font-size: 130%;
+  text-shadow: 0px 2px 1px #222222;
+}
+/* line 10, ../scss/typography/_titles.scss */
+h2 a {
+  color: #2491ca;
+}
+/* line 12, ../scss/typography/_titles.scss */
+h2 a:visited, h2 a:active, h2 a:focus {
+  color: #2491ca;
+}
+/* line 15, ../scss/typography/_titles.scss */
+h2 a:hover {
+  color: #e5976f;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 6, ../scss/typography/_titles.scss */
+  h2 {
+    text-shadow: 0px 3px 2px #222222;
+    font-size: 180%;
+  }
+}
+
+/* line 27, ../scss/typography/_titles.scss */
+h3 {
+  font-size: 115%;
+  text-shadow: 0px 1px 1px #222222;
+}
+/* line 31, ../scss/typography/_titles.scss */
+h3 a {
+  color: #2491ca;
+}
+/* line 33, ../scss/typography/_titles.scss */
+h3 a:visited, h3 a:active, h3 a:focus {
+  color: #2491ca;
+}
+/* line 36, ../scss/typography/_titles.scss */
+h3 a:hover {
+  color: #e5976f;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 27, ../scss/typography/_titles.scss */
+  h3 {
+    text-shadow: 0px 2px 2px #222222;
+    font-size: 140%;
+  }
+}
+
+/* line 1, ../scss/typography/_links.scss */
+a {
+  text-decoration: none;
+  color: #2491ca;
+}
+/* line 5, ../scss/typography/_links.scss */
+a:visited, a:active, a:focus {
+  color: #2491ca;
+}
+/* line 9, ../scss/typography/_links.scss */
+a:hover {
+  color: #e5976f;
+}
+
+/* ========================================================
+ * COMPONENTS
+ * ======================================================== */
+/* line 2, ../scss/components/_article-details.scss */
+dl.article-info dt.article-info-term {
+  display: none;
+}
+/* line 6, ../scss/components/_article-details.scss */
+dl.article-info dd {
+  margin: 0;
+}
+/* line 9, ../scss/components/_article-details.scss */
+dl.article-info dd.createdby {
+  font-weight: bold;
+  font-family: Oswald, Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+
+/* line 1, ../scss/components/_article-tags.scss */
+ul.tags {
+  padding: 0;
+}
+/* line 4, ../scss/components/_article-tags.scss */
+ul.tags li {
+  border: #05151d solid 1px;
+  background-color: #b2c9d5;
+  padding: 4px;
+  display: inline-block;
+  margin: 0 0px 4px 0;
+  color: #0d3448;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  text-shadow: 0px 1px 1px white;
+}
+/* line 27, ../scss/portable/modules/_tag-links.scss */
+ul.tags li * {
+  color: #0d3448;
+}
+/* line 34, ../scss/portable/modules/_tag-links.scss */
+ul.tags li:hover {
+  background-color: #43a9de;
+  border: #0d3448 solid 1px;
+  cursor: pointer;
+}
+/* line 12, ../scss/components/_article-tags.scss */
+ul.tags li a {
+  text-decoration: none;
+}
+
+/* line 32, ../scss/template.scss */
+* {
+  box-sizing: border-box;
+}

@@ -1,0 +1,16 @@
+ul.tags {
+    padding: 0;
+
+    li {
+        @include tag-links(desaturate(lighten($color-link, 30), 40),
+                $color-link-hover,
+                darken($color-link, 30),
+                4px,
+                darken($color-link, 40) solid 1px,
+                darken($color-link-hover, 40) solid 1px);
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
