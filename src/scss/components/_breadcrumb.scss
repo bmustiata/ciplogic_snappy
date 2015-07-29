@@ -1,0 +1,41 @@
+$article-details-background-color: desaturate(darken(complement($color-link), 30), 0);
+$article-details-active-color: white;
+$article-details-link-color: complement($color-link);
+
+.section-content-top {
+    background-color: $article-details-background-color;
+    border-top: dotted gray 1px;
+    border-bottom: dotted gray 1px;
+}
+
+ul.breadcrumb {
+    padding : $margin-unit 0 $margin-unit 0;
+    margin: 0;
+    word-wrap: break-word;
+
+    @include MQ(L) {
+        padding : $margin-unit-large 0 $margin-unit-large 0;
+    }
+
+    li:nth-child(1) {
+        display: none;
+    }
+
+    li {
+        display : inline;
+//        @include text-shadow(0 1px 2px white);
+
+        &.active {
+            color: $article-details-active-color;
+            font-weight: bold;
+        }
+
+        .divider {
+            padding: 0 4px 0 4px;
+        }
+
+        a {
+            color : $article-details-link-color;
+        }
+    }
+}

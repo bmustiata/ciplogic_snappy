@@ -1,4 +1,10 @@
+$article-info-text-color: #333333;
+
 dl.article-info {
+    background-color: #e2e2e2;
+    padding: 4px;
+    @include border-radius(4px);
+
     dt.article-info-term {
         display : none;
     }
@@ -7,8 +13,16 @@ dl.article-info {
         margin: 0;
 
         &.createdby {
-            font-weight: bold;
-            font-family: $font-family-title;
+            color: $article-info-text-color;
+            font-size: 80%;
+            @include text-shadow(0 1px 2px white);
+        }
+
+        &.create {
+            color: $article-info-text-color;
+            font-style: italic;
+            font-size: 80%;
+            @include text-shadow(0 1px 2px white);
         }
     }
 }

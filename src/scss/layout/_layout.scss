@@ -1,0 +1,25 @@
+.section {
+    @include MQ(L) {
+        .component {
+            width: 700px;
+            display: inline-block;
+        }
+
+        .right {
+            width: 220px;
+            display: inline-block;
+            vertical-align: top;
+        }
+    }
+
+    & > * {
+        padding: 0 $margin-section 0 $margin-section;
+        width: $margin-section-width;
+
+        @include MQ(L) {
+            margin: 0 $margin-section-large 0 $margin-section-large;
+            width: $margin-section-large-width;
+        }
+    }
+}
+

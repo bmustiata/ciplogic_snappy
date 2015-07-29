@@ -15,11 +15,13 @@
 /* ========================================================
  * LAYOUT
  * ======================================================== */
+@import "layout/_layout.scss";
 
 /* ========================================================
  * TYPOGRAPHY
  * ======================================================== */
 @import "typography/_page.scss";
+@import "typography/_page_header.scss";
 @import "typography/_titles.scss";
 @import "typography/_links.scss";
 
@@ -28,6 +30,7 @@
  * ======================================================== */
 @import "components/_article-details.scss";
 @import "components/_article-tags.scss";
+@import "components/_breadcrumb.scss";
 
 * {
     @include box-sizing();

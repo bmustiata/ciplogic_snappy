@@ -17,6 +17,7 @@ module.exports = function(grunt) {
                             "**/*.css",
                             "**/*.ttf",
                             "**/*.php",
+                            "**/*.jpeg",
                             "**/*.html"
                         ],
                         dest: "/home/raptor/host/ciplogic/blog/templates/ciplogic_snappy"

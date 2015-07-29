@@ -3,9 +3,12 @@ h1, h2, h3, h4, h5, h6 {
     color: $color-title;
 }
 
+$title-shadow-color : darken(desaturate($color-link, 50), 20);
+
 h2 {
     font-size: 130%;
-    @include text-shadow(0px 2px 1px #222222);
+    @include text-shadow(0px 2px 1px $title-shadow-color);
+    text-transform: uppercase;
 
     a {
         color : lighten($color-link, 0);
@@ -18,15 +21,19 @@ h2 {
     }
 
     @include MQ(L) {
-        @include text-shadow(0px 3px 2px #222222);
+        @include text-shadow(0px 3px 2px $title-shadow-color);
         font-size: 180%;
     };
+}
+
+.page-header h2 {
+    text-transform: none;
 }
 
 
 h3 {
     font-size: 115%;
-    @include text-shadow(0px 1px 1px #222222);
+    @include text-shadow(0px 1px 1px $title-shadow-color);
 
     a {
         color : lighten($color-link, 0);
@@ -39,7 +46,7 @@ h3 {
     }
 
     @include MQ(L) {
-        @include text-shadow(0px 2px 2px #222222);
+        @include text-shadow(0px 2px 2px $title-shadow-color);
         font-size: 140%;
     };
 }

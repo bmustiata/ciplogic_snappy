@@ -3,6 +3,7 @@
  * ======================================================== */
 $color-background: #ffffff;
 $color-text : #000000;
+//$color-link : #2491ca;
 $color-link : #2491ca;
 $color-link-hover: lighten($color-link, 10);
 $color-title : lighten(complement($color-link), 20);
@@ -12,3 +13,16 @@ $color-title : lighten(complement($color-link), 20);
  * ======================================================== */
 $font-family-title: Oswald, Verdana, Geneva, Arial, Helvetica, sans-serif;
 $font-family-regular-text: "Segoe UI", Arial, Helvetica, sans-serif;
+
+/* ========================================================
+ * Margin settings
+ * ======================================================== */
+/* left and right margins for sections */
+$margin-section: 4px;
+$margin-section-large: auto;
+
+$margin-section-width: 100%;
+$margin-section-large-width: 960px;
+
+$margin-unit : 2px;
+$margin-unit-large: 4px;
