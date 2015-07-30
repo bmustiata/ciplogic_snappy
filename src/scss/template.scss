@@ -16,6 +16,7 @@
  * LAYOUT
  * ======================================================== */
 @import "layout/_layout.scss";
+@import "layout/_user-section.scss";
 
 /* ========================================================
  * TYPOGRAPHY
@@ -24,6 +25,9 @@
 @import "typography/_page_header.scss";
 @import "typography/_titles.scss";
 @import "typography/_links.scss";
+@import "typography/_images.scss";
+@import "typography/_user-section.scss";
+@import "typography/_bottom-section.scss";
 
 /* ========================================================
  * COMPONENTS
@@ -31,6 +35,8 @@
 @import "components/_article-details.scss";
 @import "components/_article-tags.scss";
 @import "components/_breadcrumb.scss";
+@import "components/_paginator.scss";
+@import "components/_latest-articles.scss";
 
 * {
     @include box-sizing();

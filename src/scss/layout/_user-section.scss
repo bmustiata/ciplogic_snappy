@@ -1,0 +1,14 @@
+.section-user567 {
+    padding-bottom: 1em;
+
+    .user5,
+    .user6,
+    .user7 {
+        @include MQ(L) {
+            width: 310px;
+            display: inline-block;
+            vertical-align: top;
+            padding-right: 10px;
+        }
+    }
+}

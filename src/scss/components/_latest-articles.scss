@@ -1,0 +1,18 @@
+.right .latestnews {
+    padding: 0;
+    list-style-type: none;
+
+    li {
+        margin-bottom: $margin-unit * 8;
+    }
+}
+
+.right h3 {
+    margin: 0.83em 0; // same margin as H2
+    font-size : $font-size-title;
+    text-transform: uppercase;
+
+    @include MQ(L) {
+        font-size: $font-size-title-large;
+    }
+}

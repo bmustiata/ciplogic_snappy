@@ -23,7 +23,15 @@
 
     <positions>
         <position>debug</position>
-        <position>position-0</position>
+        <position>mainmenu</position>
+        <position>content-top</position>
+        <position>top</position>
+        <position>user-bottom</position>
+        <position>right</position>
+        <position>user5</position>
+        <position>user6</position>
+        <position>user7</position>
+        <position>bottom</position>
     </positions>
 
     <!-- languages -->

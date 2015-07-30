@@ -1,0 +1,46 @@
+$pagination-padding: 5px;
+
+.pagination {
+     .counter {
+        display : none;
+    }
+
+    ul {
+        padding: 0;
+
+        li {
+            display : inline-block;
+            margin: $margin-unit $margin-unit 0 0;
+
+            @include text-shadow(0 1px 2px white);
+
+            a.pagenav {
+                @include border-radius($margin-unit);
+                background-color: lighten($color-link, 30);
+                padding: $pagination-padding $pagination-padding * 2 $pagination-padding $pagination-padding * 2;
+                display: inline-block;
+                color: black;
+            }
+
+            span.pagenav {
+                @include border-radius($margin-unit);
+                background-color: complement($color-link);
+                padding: $pagination-padding $pagination-padding * 2 $pagination-padding $pagination-padding * 2;
+                display: inline-block;
+                color: white;
+            }
+        }
+
+        li.pagination-next span.pagenav,
+        li.pagination-end span.pagenav,
+        li.pagination-start span.pagenav,
+        li.pagination-prev span.pagenav {
+        	color: gray;
+            background-color: desaturate(lighten($color-link, 30), 50);
+        }
+    }
+}
+
+body > .tooltip {
+    visibility: hidden;
+}

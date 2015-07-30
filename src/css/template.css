@@ -34,6 +34,9 @@
  * ======================================================== */
 /* left and right margins for sections */
 /* ========================================================
+ * Title settings
+ * ======================================================== */
+/* ========================================================
  * This is a copy from:
  * https://github.com/kristerkari/normalize.scss/blob/master/_normalize.scss
  * ======================================================== */
@@ -333,7 +336,7 @@ input[type="checkbox"], input[type="radio"] {
 }
 /* line 15, ../scss/layout/_layout.scss */
 .section > * {
-  padding: 0 4px 0 4px;
+  padding: 0 8px 0 8px;
   width: 100%;
 }
 @media only screen and (min-width: 20cm) {
@@ -341,6 +344,22 @@ input[type="checkbox"], input[type="radio"] {
   .section > * {
     margin: 0 auto 0 auto;
     width: 960px;
+  }
+}
+
+/* line 1, ../scss/layout/_user-section.scss */
+.section-user567 {
+  padding-bottom: 1em;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 4, ../scss/layout/_user-section.scss */
+  .section-user567 .user5,
+  .section-user567 .user6,
+  .section-user567 .user7 {
+    width: 310px;
+    display: inline-block;
+    vertical-align: top;
+    padding-right: 10px;
   }
 }
 
@@ -389,19 +408,20 @@ h1, h2, h3, h4, h5, h6 {
 
 /* line 8, ../scss/typography/_titles.scss */
 h2 {
-  font-size: 130%;
+  font-size: 150%;
   text-shadow: 0px 2px 1px #374851;
   text-transform: uppercase;
+  font-weight: 100;
 }
-/* line 13, ../scss/typography/_titles.scss */
+/* line 14, ../scss/typography/_titles.scss */
 h2 a {
   color: #2491ca;
 }
-/* line 15, ../scss/typography/_titles.scss */
+/* line 16, ../scss/typography/_titles.scss */
 h2 a:visited, h2 a:active, h2 a:focus {
   color: #2491ca;
 }
-/* line 18, ../scss/typography/_titles.scss */
+/* line 19, ../scss/typography/_titles.scss */
 h2 a:hover {
   color: #e5976f;
 }
@@ -413,30 +433,30 @@ h2 a:hover {
   }
 }
 
-/* line 29, ../scss/typography/_titles.scss */
+/* line 30, ../scss/typography/_titles.scss */
 .page-header h2 {
   text-transform: none;
 }
 
-/* line 34, ../scss/typography/_titles.scss */
+/* line 35, ../scss/typography/_titles.scss */
 h3 {
   font-size: 115%;
   text-shadow: 0px 1px 1px #374851;
 }
-/* line 38, ../scss/typography/_titles.scss */
+/* line 39, ../scss/typography/_titles.scss */
 h3 a {
   color: #2491ca;
 }
-/* line 40, ../scss/typography/_titles.scss */
+/* line 41, ../scss/typography/_titles.scss */
 h3 a:visited, h3 a:active, h3 a:focus {
   color: #2491ca;
 }
-/* line 43, ../scss/typography/_titles.scss */
+/* line 44, ../scss/typography/_titles.scss */
 h3 a:hover {
   color: #e5976f;
 }
 @media only screen and (min-width: 20cm) {
-  /* line 34, ../scss/typography/_titles.scss */
+  /* line 35, ../scss/typography/_titles.scss */
   h3 {
     text-shadow: 0px 2px 2px #374851;
     font-size: 140%;
@@ -455,6 +475,32 @@ a:visited, a:active, a:focus {
 /* line 9, ../scss/typography/_links.scss */
 a:hover {
   color: #e5976f;
+}
+
+/* line 2, ../scss/typography/_images.scss */
+.section-component .component img {
+  max-width: 100%;
+}
+
+/* line 1, ../scss/typography/_user-section.scss */
+.section-user567 {
+  background-color: #2491ca;
+  color: white;
+  border-top: solid black 2px;
+}
+/* line 9, ../scss/typography/_user-section.scss */
+.section-user567 .user5 h2, .section-user567 .user5 h3,
+.section-user567 .user6 h2,
+.section-user567 .user6 h3,
+.section-user567 .user7 h2,
+.section-user567 .user7 h3 {
+  color: white;
+}
+
+/* line 1, ../scss/typography/_bottom-section.scss */
+.section-bottom {
+  background-color: black;
+  min-height: 3em;
 }
 
 /* ========================================================
@@ -563,7 +609,78 @@ ul.breadcrumb li a {
   color: #ca5d24;
 }
 
-/* line 35, ../scss/template.scss */
+/* line 4, ../scss/components/_paginator.scss */
+.pagination .counter {
+  display: none;
+}
+/* line 8, ../scss/components/_paginator.scss */
+.pagination ul {
+  padding: 0;
+}
+/* line 11, ../scss/components/_paginator.scss */
+.pagination ul li {
+  display: inline-block;
+  margin: 2px 2px 0 0;
+  text-shadow: 0 1px 2px white;
+}
+/* line 17, ../scss/components/_paginator.scss */
+.pagination ul li a.pagenav {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #9ad1ed;
+  padding: 5px 10px 5px 10px;
+  display: inline-block;
+  color: black;
+}
+/* line 25, ../scss/components/_paginator.scss */
+.pagination ul li span.pagenav {
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background-color: #ca5d24;
+  padding: 5px 10px 5px 10px;
+  display: inline-block;
+  color: white;
+}
+/* line 34, ../scss/components/_paginator.scss */
+.pagination ul li.pagination-next span.pagenav,
+.pagination ul li.pagination-end span.pagenav,
+.pagination ul li.pagination-start span.pagenav,
+.pagination ul li.pagination-prev span.pagenav {
+  color: gray;
+  background-color: #b8c7cf;
+}
+
+/* line 44, ../scss/components/_paginator.scss */
+body > .tooltip {
+  visibility: hidden;
+}
+
+/* line 1, ../scss/components/_latest-articles.scss */
+.right .latestnews {
+  padding: 0;
+  list-style-type: none;
+}
+/* line 5, ../scss/components/_latest-articles.scss */
+.right .latestnews li {
+  margin-bottom: 16px;
+}
+
+/* line 10, ../scss/components/_latest-articles.scss */
+.right h3 {
+  margin: 0.83em 0;
+  font-size: 150%;
+  text-transform: uppercase;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 10, ../scss/components/_latest-articles.scss */
+  .right h3 {
+    font-size: 180%;
+  }
+}
+
+/* line 41, ../scss/template.scss */
 * {
   box-sizing: border-box;
 }
