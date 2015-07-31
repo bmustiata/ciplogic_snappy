@@ -4,13 +4,20 @@
 <head>
 <jdoc:include type="head" />
     <link rel="stylesheet" href="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/css/template.css" type="text/css" />
-    <script type="text/javascript" src="<?php echo $this->baseurl ?>/templates/<?php echo $this->template ?>/js/script.js"></script>
 </head>
 <body>
     <jdoc:include type="modules" name="debug"/>
 
     <div class="section section-mainmenu">
         <div class="section-content">
+            <div class="site-title">
+                <div class="main-header">
+                    ciplogic.com
+                </div>
+                <div class="sub-header">
+                    Live with grace. Write superb software.
+                </div>
+            </div>
             <div class="mainmenu">
                 <jdoc:include type="modules" name="mainmenu" style="html5"/>
             </div>
@@ -66,7 +73,7 @@
 
     <div class="section section-bottom">
         <div class="bottom">
-            <jdoc:include type="modules" name="bottom"  style="html5"/>
+            <jdoc:include type="modules" name="bottom" style="html5"/>
         </div>
     </div>
 </body>

@@ -1,0 +1,30 @@
+.mainmenu {
+    ul {
+        padding : 0;
+
+        li {
+            display : inline-block;
+            margin-right: $margin-unit * 4;
+            padding: 8px 16px 8px 16px;
+            font-family: $font-family-title;
+            @include text-shadow(0 1px 8px black);
+
+            a {
+                color: lighten($color-link, 30);
+            }
+
+            &.current {
+                @include border-radius(4px);
+                background-color: complement($color-link);
+
+                a {
+                    color: white;
+                }
+            }
+
+            @include MQ(L) {
+                font-size: 150%;
+            }
+        }
+    }
+}

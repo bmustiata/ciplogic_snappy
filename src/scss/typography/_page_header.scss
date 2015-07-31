@@ -1,12 +1,14 @@
 .section-mainmenu {
+    $main-menu-padding: 120px;
+
     //background-image: url(../images/0112_yZf1quatKCA.jpeg);
     background-image: url(../images/0218_vwY2D2Wr4ME.jpeg);
     background-size: cover;
-    background-position: 0;
+    background-position: top;
     margin: 0;
-    padding: 10px 0 10px 0;
+    padding: 10px 0 20px 0;
 
     @include MQ(L) {
-        padding: 10% 0 10% 0;
+        padding: $main-menu-padding 0 $main-menu-padding + 10px 0;
     }
 }

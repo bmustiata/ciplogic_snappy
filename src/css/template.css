@@ -373,13 +373,25 @@ input[type="checkbox"], input[type="radio"] {
   font-family: Oswald;
   src: url(../fonts/Oswald-Regular.ttf);
 }
-/* line 9, ../scss/typography/_page.scss */
+@font-face {
+  font-family: PlayfairDisplay;
+  src: url(../fonts/PlayfairDisplay-Bold.ttf);
+}
+@font-face {
+  font-family: OldStandard;
+  src: url(../fonts/OldStandard-Bold.ttf);
+}
+@font-face {
+  font-family: EBGaramond;
+  src: url(../fonts/EBGaramond-Regular.ttf);
+}
+/* line 24, ../scss/typography/_page.scss */
 body {
   font-size: 100%;
   font-family: "Segoe UI", Arial, Helvetica, sans-serif;
 }
 @media only screen and (min-width: 15cm) {
-  /* line 9, ../scss/typography/_page.scss */
+  /* line 24, ../scss/typography/_page.scss */
   body {
     font-size: 100%;
   }
@@ -389,76 +401,75 @@ body {
 .section-mainmenu {
   background-image: url(../images/0218_vwY2D2Wr4ME.jpeg);
   background-size: cover;
-  background-position: 0;
+  background-position: top;
   margin: 0;
-  padding: 10px 0 10px 0;
+  padding: 10px 0 20px 0;
 }
 @media only screen and (min-width: 20cm) {
   /* line 1, ../scss/typography/_page_header.scss */
   .section-mainmenu {
-    padding: 10% 0 10% 0;
+    padding: 120px 0 130px 0;
   }
 }
 
 /* line 1, ../scss/typography/_titles.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: Oswald, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-family: EBGaramond, Verdana, Geneva, Arial, Helvetica, sans-serif;
   color: #e5976f;
 }
 
 /* line 8, ../scss/typography/_titles.scss */
 h2 {
   font-size: 150%;
-  text-shadow: 0px 2px 1px #374851;
-  text-transform: uppercase;
+  text-shadow: 0px 1px 1px #374851;
   font-weight: 100;
 }
-/* line 14, ../scss/typography/_titles.scss */
+/* line 13, ../scss/typography/_titles.scss */
 h2 a {
   color: #2491ca;
 }
-/* line 16, ../scss/typography/_titles.scss */
+/* line 15, ../scss/typography/_titles.scss */
 h2 a:visited, h2 a:active, h2 a:focus {
   color: #2491ca;
 }
-/* line 19, ../scss/typography/_titles.scss */
+/* line 18, ../scss/typography/_titles.scss */
 h2 a:hover {
   color: #e5976f;
 }
 @media only screen and (min-width: 20cm) {
   /* line 8, ../scss/typography/_titles.scss */
   h2 {
-    text-shadow: 0px 3px 2px #374851;
-    font-size: 180%;
+    text-shadow: 0px 1px 2px #374851;
+    font-size: 200%;
   }
 }
 
-/* line 30, ../scss/typography/_titles.scss */
+/* line 29, ../scss/typography/_titles.scss */
 .page-header h2 {
   text-transform: none;
 }
 
-/* line 35, ../scss/typography/_titles.scss */
+/* line 34, ../scss/typography/_titles.scss */
 h3 {
   font-size: 115%;
   text-shadow: 0px 1px 1px #374851;
 }
-/* line 39, ../scss/typography/_titles.scss */
+/* line 38, ../scss/typography/_titles.scss */
 h3 a {
   color: #2491ca;
 }
-/* line 41, ../scss/typography/_titles.scss */
+/* line 40, ../scss/typography/_titles.scss */
 h3 a:visited, h3 a:active, h3 a:focus {
   color: #2491ca;
 }
-/* line 44, ../scss/typography/_titles.scss */
+/* line 43, ../scss/typography/_titles.scss */
 h3 a:hover {
   color: #e5976f;
 }
 @media only screen and (min-width: 20cm) {
-  /* line 35, ../scss/typography/_titles.scss */
+  /* line 34, ../scss/typography/_titles.scss */
   h3 {
-    text-shadow: 0px 2px 2px #374851;
+    text-shadow: 0px 1px 2px #374851;
     font-size: 140%;
   }
 }
@@ -671,16 +682,90 @@ body > .tooltip {
 .right h3 {
   margin: 0.83em 0;
   font-size: 150%;
-  text-transform: uppercase;
 }
 @media only screen and (min-width: 20cm) {
   /* line 10, ../scss/components/_latest-articles.scss */
   .right h3 {
-    font-size: 180%;
+    font-size: 200%;
   }
 }
 
-/* line 41, ../scss/template.scss */
+/* line 2, ../scss/components/_main-menu.scss */
+.mainmenu ul {
+  padding: 0;
+}
+/* line 5, ../scss/components/_main-menu.scss */
+.mainmenu ul li {
+  display: inline-block;
+  margin-right: 8px;
+  padding: 8px 16px 8px 16px;
+  font-family: EBGaramond, Verdana, Geneva, Arial, Helvetica, sans-serif;
+  text-shadow: 0 1px 8px black;
+}
+/* line 12, ../scss/components/_main-menu.scss */
+.mainmenu ul li a {
+  color: #9ad1ed;
+}
+/* line 16, ../scss/components/_main-menu.scss */
+.mainmenu ul li.current {
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  background-color: #ca5d24;
+}
+/* line 20, ../scss/components/_main-menu.scss */
+.mainmenu ul li.current a {
+  color: white;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 5, ../scss/components/_main-menu.scss */
+  .mainmenu ul li {
+    font-size: 150%;
+  }
+}
+
+/* line 1, ../scss/components/_site-title.scss */
+.section-mainmenu .section-content {
+  position: relative;
+}
+
+/* line 6, ../scss/components/_site-title.scss */
+.site-title .main-header {
+  color: white;
+  font-family: EBGaramond;
+  font-size: 280%;
+  clear: none;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 6, ../scss/components/_site-title.scss */
+  .site-title .main-header {
+    font-size: 400%;
+  }
+}
+/* line 18, ../scss/components/_site-title.scss */
+.site-title .sub-header {
+  color: white;
+  background-color: black;
+  padding: 2px 16px 2px 16px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+  opacity: 0.8;
+  -moz-border-radius: 4px 4px 0 0px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px 4px 0 0px;
+  position: absolute;
+  bottom: -36px;
+  left: -8px;
+  right: -8px;
+  font-size: 80%;
+}
+@media only screen and (min-width: 20cm) {
+  /* line 18, ../scss/components/_site-title.scss */
+  .site-title .sub-header {
+    bottom: -146px;
+  }
+}
+
+/* line 43, ../scss/template.scss */
 * {
   box-sizing: border-box;
 }

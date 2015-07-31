@@ -1,0 +1,35 @@
+.section-mainmenu .section-content {
+    position: relative;
+}
+
+.site-title {
+    .main-header {
+        color: white;
+        font-family: EBGaramond;
+        font-size: 280%;
+        clear: none;
+        //@include text-shadow(0px 1px 3px black);
+
+        @include MQ(L) {
+            font-size: 400%;
+        }
+    }
+
+    .sub-header {
+        color : white;
+        background-color: black;
+        padding: 2px 16px 2px 16px;
+        @include opacity(0.8);
+        @include border-radius(4px 4px 0 0px);
+        position: absolute;
+        bottom : -36px;
+        left: -8px;
+        right: -8px;
+        font-size: 80%;
+
+
+        @include MQ(L) {
+            bottom : -146px;
+        }
+    }
+}
