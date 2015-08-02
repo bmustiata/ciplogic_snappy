@@ -23,13 +23,15 @@
         @include border-radius(4px 4px 0 0px);
         position: absolute;
         bottom : -36px;
-        left: -8px;
-        right: -8px;
+        left: 0px;
+        right: 0px;
         font-size: 80%;
 
 
         @include MQ(L) {
             bottom : -146px;
+            left: -8px;
+            right: -8px;
         }
     }
 }
